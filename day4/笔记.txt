@@ -1,0 +1,77 @@
+一、上节内容补充回顾
+	1、lambda表达式
+		func = lambda x,y : x + y
+			参数：x,y
+			函数体：x+y ==》 return x+y
+			func ： 函数名
+			def func:(x,y)
+				return x+y
+			扩展：
+				函数名可以当作参数传递
+					函数名（） ==》 执行函数
+					函数名	==》 代指函数（指向函数的内存）
+	2、内置函数
+			xxx
+	3、open文件操作
+			open()
+			1、文件路径
+			2、模式
+				基本操作
+					r,	只读
+					w,	只写入(先清空)
+					x,	只写入(不存在则创建，存在报错)
+					a,	追加，只写
+					总结：普通的转换Python解释器处理
+				二进制操作
+					rb,	只读
+					wb,	只写入(先清空)
+					xb,	只写入(不存在则创建，存在报错)
+					ab,	追加，只写
+					总结：二进制的转换自己处理
+				+
+					r+,	读写:
+							读：从0开始读
+							写：
+								先读，最后追加
+								主动seek，写从当前指针向后写
+									==》两个指针，一个代表读，一个代表写
+					w+,	读写
+					x+,	读写
+					a+,	读写：
+								读：从最后位置开始读
+								写：
+									最后追加
+									主动seek，还是往最后追击
+					r+ 最常用
+			3、文件操作
+					trancate	截取指针前面的内容
+					read		读取(读取字节或者字符取决于打开方式)
+						read(1):	无b,字符
+						read(1):	有b,字节
+					write：
+						str			无b,字符
+						bytes		有b,字节
+					readLine	只读取一行
+					readLines	["第一行"，"第二行"]
+					xreadLines  Python 2.7
+						for line in xreadLines():
+							line
+					f = open()
+					for i in f:
+						print(i)
+					
+					flush:		强行刷如硬盘
+					tell：		获取指针位置
+					seek：		跳转到某个位置
+					close：		关闭
+			4、	with open(xxx) as f
+						print
+			5、	with open(xxx) as f1,with open(xxx) as f2
+						
+					
+					
+					
+					
+二、递归算法
+三、冒泡算法
+四、装饰墙（重点）
