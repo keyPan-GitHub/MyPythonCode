@@ -15,9 +15,9 @@ f.close()
 
 # f = open('yesterday2','r+',encoding="utf-8") #文件句柄 读写
 # f = open('yesterday2','w+',encoding="utf-8") #文件句柄  写读
-#f = open('yesterday2','a+',encoding="utf-8") #文件句柄  追加读写
-#f = open('yesterday2','rb') #文件句柄  二进制文件 读
-f = open('yesterday2','wb') #文件句柄  二进制文件 写
+# f = open('yesterday2','a+',encoding="utf-8") #文件句柄  追加读写
+# f = open('yesterday2','rb') #文件句柄  二进制文件 读
+f = open('yesterday2', 'wb')  # 文件句柄  二进制文件 写
 
 f.write("hello binary\n".encode())
 f.close()
@@ -53,7 +53,7 @@ f.seek(10)
 f.truncate(20)
 
 '''
-#high bige
+# high bige
 '''
 count = 0
 for line in f:
@@ -74,4 +74,3 @@ for index,line in enumerate(f.readlines()):
 # for i in range(5):
     # print(f.readline())
 '''
-

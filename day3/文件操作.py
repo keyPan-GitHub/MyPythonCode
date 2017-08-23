@@ -112,10 +112,10 @@ f.write("sb")
 # print(data)
 
 
-f.tell() # 获取指针位置
-f.seek() # 调整指针位置
-f.write() #写入
-f.read() # 读取
+# f.tell() # 获取指针位置
+# f.seek() # 调整指针位置
+# f.write() #写入
+# f.read() # 读取
 
 f.close()
 
