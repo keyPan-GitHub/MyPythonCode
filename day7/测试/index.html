@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh - CN">
+
+<head>
+  <meta charset="UTF - 8">
+  <meta name="viewport" content="width=device-width, initial - scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>不良事件检索汇总记录</title>
+</head>
+
+<body>
+  <!-- 左侧导航栏 -->
+  <div class="sidebar">
+    <div class="user - info">
+      <img src="nurse_icon.png" alt="护士头像">
+      <div class="user - details">
+        <p class="role">管理员</p>
+        <p class="department">护理部</p>
+      </div>
+    </div>
+    <ul class="nav - list">
+      <li><a href="#">人力资源</a></li>
+      <li><a href="#">不良事件</a>
+        <ul class="sub - nav">
+          <li><a href="#">检索汇总记录</a></li>
+          <li><a href="#">不良事件上报</a></li>
+          <li><a href="#">统计汇总报表</a></li>
+        </ul>
+      </li>
+      <li><a href="#">智能排班</a></li>
+      <li><a href="#">质控检查</a></li>
+      <li><a href="#">在线考试</a></li>
+      <li><a href="#">护士长手册</a></li>
+    </ul>
+  </div>
+
+  <!-- 主要内容区域 -->
+  <div class="main - content">
+    <!-- 筛选条件区域 -->
+    <div class="filter - section">
+      <label for="form - info">表单信息:</label>
+      <input type="text" id="form - info" placeholder="表单信息">
+      <label for="department">科别:</label>
+      <input type="text" id="department" placeholder="科室">
+      <label for="ward">病房:</label>
+      <input type="text" id="ward" placeholder="病房">
+      <label for="report - time - start">上报时间:</label>
+      <input type="date" id="report - time - start">
+      <span>至</span>
+      <input type="date" id="report - time - end">
+      <label for="reporter">上报人:</label>
+      <input type="text" id="reporter" placeholder="请填写上报人">
+      <label for="report - status">上报状态:</label>
+      <select id="report - status">
+        <option value="">请选择</option>
+        <option value="提交">提交</option>
+      </select>
+      <label for="person - involved">当事人:</label>
+      <input type="text" id="person - involved" placeholder="请选择">
+      <label for="audit - status">审核状态:</label>
+      <select id="audit - status">
+        <option value="">请选择</option>
+        <option value="待审核">待审核</option>
+      </select>
+      <button id="filter - button">筛选</button>
+      <button id="clear - button">清空</button>
+    </div>
+
+    <!-- 表格区域 -->
+    <table class="event - table">
+      <thead>
+        <tr>
+          <th>表单信息</th>
+          <th>科别</th>
+          <th>病房</th>
+          <th>上报人</th>
+          <th>上报状态</th>
+          <th>当事人</th>
+          <th>审核状态</th>
+          <th>审核护士长</th>
+          <th>审核专家</th>
+          <th>审核护理部</th>
+          <th>护士长查看</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>护理问题通知 单及持续质量改进记录</td>
+          <td></td>
+          <td></td>
+          <td>护士</td>
+          <td>提交</td>
+          <td>是</td>
+          <td>待总护士长审核</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>否</td>
+          <td><a href="#">查看</a> <a href="#">删除</a></td>
+        </tr>
+        <!-- 更多行数据可按此格式添加 -->
+      </tbody>
+    </table>
+
+    <!-- 分页区域 -->
+    <div class="pagination">
+      <p>共303条</p>
+      <select id="page - size">
+        <option value="5">5条/页</option>
+      </select>
+      <span>
+        <a href="#" class="page - link" id="prev - page">«</a>
+        <a href="#" class="page - link" id="page - 1">1</a>
+        <a href="#" class="page - link" id="page - 2">2</a>
+        <a href="#" class="page - link" id="page - 3">3</a>
+        <a href="#" class="page - link" id="page - 4">4</a>
+        <a href="#" class="page - link" id="page - 5">5</a>
+        <a href="#" class="page - link" id="page - 6">6</a>
+        <span>...</span>
+        <a href="#" class="page - link" id="page - 61">61</a>
+        <a href="#" class="page - link" id="next - page">»</a>
+      </span>
+      <label for="go - to - page">前往</label>
+      <input type="number" id="go - to - page" min="1" max="61" value="1">
+      <span>页</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

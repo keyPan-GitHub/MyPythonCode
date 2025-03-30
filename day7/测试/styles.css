@@ -1,0 +1,145 @@
+/* 通用样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #3c8dbc;
+    color: white;
+    padding: 20px;
+    position: fixed;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    padding: 5px 0;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+.nav-list li a:hover {
+    background-color: #367fa9;
+}
+
+.sub-nav {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-section label {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.filter-section input,
+.filter-section select {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.filter-section button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: #3c8dbc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.event-table th,
+.event-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.event-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.event-table a {
+    color: #3c8dbc;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.event-table a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.pagination p {
+    margin-right: 10px;
+}
+
+.pagination select {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.pagination span {
+    margin-right: 10px;
+}
+
+.page-link {
+    color: #3c8dbc;
+    text-decoration: none;
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+    margin-right: 5px;
+}
+
+.page-link:hover {
+    background-color: #f4f4f4;
+}
